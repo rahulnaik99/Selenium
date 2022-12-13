@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class beelineStatus {
     public static void main(String[] args) throws InterruptedException {
+        String[] reqID={"107852", "108262", "109476", "109689", "108335", "109018", "108703", "110275", "110148", "110239"};
         //System.setProperty("web.driver.chrome","C:\\Users\\Rmnai\\OneDrive\\Desktop\\Selenium\\Selenium\\src\\main\\resources\\chromedriver.exe");
         WebDriver driver;
         System.setProperty("webdriver.chrome.driver","C:\\Users\\Rmnai\\OneDrive\\Desktop\\Selenium\\Selenium\\src\\main\\resources\\chromedriver.exe");
@@ -25,12 +26,10 @@ public class beelineStatus {
         driver.findElement(By.id("MenuItem_eb84ee798caf4bbcb2e002ab5e7ad0b5")).click();
 
         Thread.sleep(2000);
-        String[] reqID={"107852", "108262", "109476", "109689", "108335", "109018", "108703", "110275", "110148", "110239"};
-        //String[] reqID={"108703", "110275", "110148", "110239"};
-        for(int i=0;i<reqID.length;i++) {
+        for(String s : reqID) {
 
 
-            driver.findElement(By.cssSelector("input[id='Master_PageContentPlaceHolder_screen_beelineForm_partEditor_procurementRequestGroupID']")).sendKeys(reqID[i]);
+            driver.findElement(By.cssSelector("input[id='Master_PageContentPlaceHolder_screen_beelineForm_partEditor_procurementRequestGroupID']")).sendKeys(s);
             driver.findElement(By.id("beeline-form-filter_Master_PageContentPlaceHolder_screen_beelineForm")).click();
             driver.findElement(By.xpath("//*[@id=\"Master_PageContentPlaceHolder_screen_selectionList\"]/tbody/tr/td[2]/a")).click();
             int backCounnt;
@@ -54,7 +53,7 @@ public class beelineStatus {
                 if (row == 11) {
                     for(int k=1;k<=col;k++){
                         System.out.println(
-                                reqID[i] +" : "+
+                                s+" : "+
                                         driver.findElement(By.xpath("/html/body/form[1]/div[4]/div[2]/div/table[4]/tbody/tr/td/div/table[2]/tbody/tr[2]/td/table/tbody/tr["+k+"]/td[4]/a")).getText() +" : "+
 
                                         driver.findElement(By.xpath("/html/body/form[1]/div[4]/div[2]/div/table[4]/tbody/tr/td/div/table[2]/tbody/tr[2]/td/table/tbody/tr["+k+"]/td[7]")).getText()
@@ -65,8 +64,9 @@ public class beelineStatus {
 
                 } else {
                     for(int l=1;l<=col;l++){
+
                         System.out.println(
-                                reqID[i] +" : "+
+                                s +" : "+
                                         driver.findElement(By.xpath("/html/body/form[1]/div[4]/div[2]/div/table[4]/tbody/tr/td/div/table[2]/tbody/tr[2]/td/table/tbody/tr["+l+"]/td[3]/a")).getText() +" : "+
 
                                         driver.findElement(By.xpath("/html/body/form[1]/div[4]/div[2]/div/table[4]/tbody/tr/td/div/table[2]/tbody/tr[2]/td/table/tbody/tr["+l+"]/td[6]")).getText()
@@ -78,7 +78,7 @@ public class beelineStatus {
 
             }
             catch (Exception e){
-                System.out.println(reqID[i]+" : No Record Found");;
+                System.out.println(s+" : No Record Found");
 
             }
             for(int j=0;j<backCounnt;j++){
