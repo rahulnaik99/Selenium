@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30a4be3a-685b-4a48-a2ad-73daef1d2092" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/classManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/elementAddToCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/synchronization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/webDriver.java" afterDir="false" />
+    <list default="true" id="30a4be3a-685b-4a48-a2ad-73daef1d2092" name="Changes" comment="synchronization func added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/classManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/elementAddToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/elementAddToCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/synchronization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/synchronization.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670944416353</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="elementAddToCart func added">
+      <created>1670992274176</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670992274176</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,7 +154,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="alertWindow func added" />
-    <option name="LAST_COMMIT_MESSAGE" value="alertWindow func added" />
+    <MESSAGE value="elementAddToCart func added" />
+    <MESSAGE value="synchronization func added" />
+    <option name="LAST_COMMIT_MESSAGE" value="synchronization func added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Selenium$elementAddToCart.ic" NAME="elementAddToCart Coverage Results" MODIFIED="1670991148851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
