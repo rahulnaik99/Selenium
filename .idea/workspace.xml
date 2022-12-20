@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30a4be3a-685b-4a48-a2ad-73daef1d2092" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/ActionClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/youTube.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/handleChildParentWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +53,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ActionClass">
+  <component name="RunManager" selected="Application.handleChildParentWindow">
     <configuration name="ActionClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ActionClass" />
       <module name="Selenium" />
@@ -81,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="elementAddToCart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.elementAddToCart" />
+    <configuration name="googleSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.googleSearch" />
       <module name="Selenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.synchronization" />
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,8 +93,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="googleSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.googleSearch" />
+    <configuration name="handleChildParentWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.handleChildParentWindow" />
       <module name="Selenium" />
       <extension name="coverage">
         <pattern>
@@ -122,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.handleChildParentWindow" />
         <item itemvalue="Application.ActionClass" />
         <item itemvalue="Application.beelineStatus" />
         <item itemvalue="Application.youTube" />
         <item itemvalue="Application.googleSearch" />
-        <item itemvalue="Application.elementAddToCart" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671519259604</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Action func added">
+      <created>1671555843586</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671555843586</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,7 +192,8 @@
     <MESSAGE value="elementAddToCart func added" />
     <MESSAGE value="synchronization func added" />
     <MESSAGE value="func added" />
-    <option name="LAST_COMMIT_MESSAGE" value="func added" />
+    <MESSAGE value="Action func added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Action func added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
