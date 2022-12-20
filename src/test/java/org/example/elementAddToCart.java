@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.example.synchronization.Cart;
+import static org.example.synchronization.CartImplicit;
 
 public class elementAddToCart {
      static WebDriver driver;
@@ -19,7 +19,7 @@ public class elementAddToCart {
         driver.get("https://rahulshettyacademy.com/seleniumPractise/");
         driver.manage().window().maximize();
         addProdToCart(driver);
-        Cart(driver);
+        CartImplicit(driver);
 
 
     }
