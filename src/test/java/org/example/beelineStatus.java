@@ -6,7 +6,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class beelineStatus {
     public static void main(String[] args) throws InterruptedException {
-        String[] reqID={"107852", "108262", "109476", "109689", "108335", "109018", "108703", "110275", "110148", "110239","111051","111053","110929", "110930"};
+        String[] reqID={"110275",
+                "110148",
+                "110239"
+                ,"107852",
+                "108262",
+                "109689",
+                "108335"
+                ,"109018"
+                ,"111124",
+                "111126"
+                ,"108703"
+                ,"110929"
+                ,"110930"};
         //System.setProperty("web.driver.chrome","C:\\Users\\Rmnai\\OneDrive\\Desktop\\Selenium\\Selenium\\src\\main\\resources\\chromedriver.exe");
         WebDriver driver;
         System.setProperty("webdriver.chrome.driver","C:\\Users\\Rmnai\\OneDrive\\Desktop\\Selenium\\Selenium\\src\\main\\resources\\chromedriver.exe");
