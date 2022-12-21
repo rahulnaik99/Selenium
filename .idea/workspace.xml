@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30a4be3a-685b-4a48-a2ad-73daef1d2092" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/handleChildParentWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/frameHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/frameHandleAssignment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +54,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.handleChildParentWindow">
+  <component name="RunManager" selected="Application.frameHandleAssignment">
     <configuration name="ActionClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ActionClass" />
       <module name="Selenium" />
@@ -80,8 +81,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="googleSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.googleSearch" />
+    <configuration name="frameHandle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.frameHandle" />
+      <module name="Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="frameHandleAssignment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.frameHandleAssignment" />
       <module name="Selenium" />
       <extension name="coverage">
         <pattern>
@@ -106,26 +120,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="youTube" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.youTube" />
-      <module name="Selenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.frameHandleAssignment" />
+        <item itemvalue="Application.frameHandle" />
         <item itemvalue="Application.handleChildParentWindow" />
         <item itemvalue="Application.ActionClass" />
         <item itemvalue="Application.beelineStatus" />
-        <item itemvalue="Application.youTube" />
-        <item itemvalue="Application.googleSearch" />
       </list>
     </recent_temporary>
   </component>
