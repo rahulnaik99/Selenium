@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30a4be3a-685b-4a48-a2ad-73daef1d2092" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/assignment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/calender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/scrollJavaScript.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/badSSL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/assignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/assignment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/beelineStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/beelineStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/linksOnPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/linksOnPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/youTube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/youTube.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/calender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/calender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/scrollJavaScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/scrollJavaScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/webDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/webDriver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +58,22 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.scrollJavaScript">
+  <component name="RunManager" selected="Application.beelineStatus">
     <configuration name="assignment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.assignment" />
+      <module name="Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="badSSL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.badSSL" />
       <module name="Selenium" />
       <extension name="coverage">
         <pattern>
@@ -98,19 +111,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="linksOnPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.linksOnPage" />
-      <module name="Selenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="scrollJavaScript" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.scrollJavaScript" />
       <module name="Selenium" />
@@ -126,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.beelineStatus" />
+        <item itemvalue="Application.badSSL" />
         <item itemvalue="Application.scrollJavaScript" />
         <item itemvalue="Application.calender" />
-        <item itemvalue="Application.beelineStatus" />
         <item itemvalue="Application.assignment" />
-        <item itemvalue="Application.linksOnPage" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671638887103</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="scroll func added">
+      <created>1671769701218</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671769701218</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,7 +221,8 @@
     <MESSAGE value="Action func added" />
     <MESSAGE value="frameHandle func added" />
     <MESSAGE value=" linksOnPage func added" />
-    <option name="LAST_COMMIT_MESSAGE" value=" linksOnPage func added" />
+    <MESSAGE value="scroll func added" />
+    <option name="LAST_COMMIT_MESSAGE" value="scroll func added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Selenium$elementAddToCart.ic" NAME="elementAddToCart Coverage Results" MODIFIED="1670991148851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
