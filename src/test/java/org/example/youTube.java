@@ -1,6 +1,5 @@
 package org.example;
 
-import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -28,7 +27,7 @@ public class youTube {
                 System.out.println(driver.findElement(By.xpath("//*[@id=\"info\"]/span[1]")).getText());
                // driver.quit();
             }
-            catch (Exception e){s
+            catch (Exception e){
                 //driver.quit();
             }
 
