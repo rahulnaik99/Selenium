@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30a4be3a-685b-4a48-a2ad-73daef1d2092" name="Changes" comment="screenShot func added">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/screenShot.java" afterDir="false" />
+    <list default="true" id="30a4be3a-685b-4a48-a2ad-73daef1d2092" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/brokenLink.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/deleteCookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/deleteCookies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/youTube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/youTube.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +39,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Rmnai/OneDrive/Desktop/commons-io-2.11.0",
+    "last_opened_file_path": "C:/Users/Rmnai/OneDrive/Desktop/Selenium/Selenium",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -61,7 +60,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.screenShot">
+  <component name="RunManager" selected="Application.brokenLink">
     <configuration name="badSSL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.badSSL" />
       <module name="Selenium" />
@@ -88,8 +87,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="screenShot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.screenShot" />
+    <configuration name="brokenLink" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.brokenLink" />
       <module name="Selenium" />
       <extension name="coverage">
         <pattern>
@@ -101,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="scrollJavaScript" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.scrollJavaScript" />
+    <configuration name="screenShot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.screenShot" />
       <module name="Selenium" />
       <extension name="coverage">
         <pattern>
@@ -129,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.brokenLink" />
         <item itemvalue="Application.screenShot" />
         <item itemvalue="Application.youTube" />
         <item itemvalue="Application.beelineStatus" />
         <item itemvalue="Application.badSSL" />
-        <item itemvalue="Application.scrollJavaScript" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671769701218</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="screenShot func added">
+      <created>1672190872623</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672190872624</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
