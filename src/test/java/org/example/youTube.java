@@ -26,9 +26,9 @@ public class youTube {
                 driver.findElement(By.cssSelector("a[title='Farewell Preparation 2K19 | CSE | ft.SHUBHAM & RN']")).click();
                 Thread.sleep(15000);
                 System.out.println(driver.findElement(By.xpath("//*[@id=\"info\"]/span[1]")).getText());
-                driver.quit();
+               // driver.quit();
             }
-            catch (Exception e){
+            catch (Exception e){s
                 //driver.quit();
             }
 

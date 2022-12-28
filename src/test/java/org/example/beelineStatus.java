@@ -16,13 +16,23 @@ public class beelineStatus {
     public static void getBeelineStatus(String[] reqID,WebDriver driver){
         driver.findElement(By.id("MenuItem_5afb9f166b034b1d8d3cace9ed5ca994")).click();
         driver.findElement(By.id("MenuItem_eb84ee798caf4bbcb2e002ab5e7ad0b5")).click();
-
+        int SL=0;
         for(String s : reqID) {
 
+            System.out.println("");
+            SL=SL+1;
 
             driver.findElement(By.cssSelector("input[id='Master_PageContentPlaceHolder_screen_beelineForm_partEditor_procurementRequestGroupID']")).sendKeys(s);
             driver.findElement(By.id("beeline-form-filter_Master_PageContentPlaceHolder_screen_beelineForm")).click();
-            driver.findElement(By.xpath("//*[@id=\"Master_PageContentPlaceHolder_screen_selectionList\"]/tbody/tr/td[2]/a")).click();
+            try{
+                driver.findElement(By.xpath("//*[@id=\"Master_PageContentPlaceHolder_screen_selectionList\"]/tbody/tr/td[2]/a")).click();
+            }
+            catch (Exception e){
+                System.out.println(SL +"\n"+s+"\n"+"BeelineID not Found / Not Released for TCS");
+                navigateBack(1,driver);
+                continue;
+            }
+
             int backCounnt;
 
             //System.out.println(driver.getTitle());
@@ -44,25 +54,36 @@ public class beelineStatus {
             try{
                 if (row == 11) {
                     for(int k=1;k<=col;k++){
-                        System.out.println(
-                                s+" : "+
-                                        driver.findElement(By.xpath("/html/body/form[1]/div[4]/div[2]/div/table[4]/tbody/tr/td/div/table[2]/tbody/tr[2]/td/table/tbody/tr["+k+"]/td[4]/a")).getText() +" : "+
+                        if ( driver.findElement(By.xpath("/html/body/form[1]/div[4]/div[2]/div/table[4]/tbody/tr/td/div/table[2]/tbody/tr[2]/td/table/tbody/tr["+k+"]/td[7]")).getText().equalsIgnoreCase("withdrawn")){
+                            continue;
+                        }
+                        else {
+                            System.out.println(SL +"\n"+
+                                    s+"\n" +
+                                            driver.findElement(By.xpath("/html/body/form[1]/div[4]/div[2]/div/table[4]/tbody/tr/td/div/table[2]/tbody/tr[2]/td/table/tbody/tr["+k+"]/td[4]/a")).getText()+"\n" +
 
-                                        driver.findElement(By.xpath("/html/body/form[1]/div[4]/div[2]/div/table[4]/tbody/tr/td/div/table[2]/tbody/tr[2]/td/table/tbody/tr["+k+"]/td[7]")).getText()
-                        );
+                                            driver.findElement(By.xpath("/html/body/form[1]/div[4]/div[2]/div/table[4]/tbody/tr/td/div/table[2]/tbody/tr[2]/td/table/tbody/tr["+k+"]/td[7]")).getText()+"\n"
+                            );
+
+                        }
 
                     }
 
 
                 } else {
                     for(int l=1;l<=col;l++){
+                        if ( driver.findElement(By.xpath("/html/body/form[1]/div[4]/div[2]/div/table[4]/tbody/tr/td/div/table[2]/tbody/tr[2]/td/table/tbody/tr["+l+"]/td[6]")).getText().equalsIgnoreCase("withdrawn")){
+                            continue;
+                        }
+                        else{
+                            System.out.println(SL +"\n"+
+                                    s +
+                                    "\n" +driver.findElement(By.xpath("/html/body/form[1]/div[4]/div[2]/div/table[4]/tbody/tr/td/div/table[2]/tbody/tr[2]/td/table/tbody/tr["+l+"]/td[3]/a")).getText()+"\n"  +
 
-                        System.out.println(
-                                s +" : "+
-                                        driver.findElement(By.xpath("/html/body/form[1]/div[4]/div[2]/div/table[4]/tbody/tr/td/div/table[2]/tbody/tr[2]/td/table/tbody/tr["+l+"]/td[3]/a")).getText() +" : "+
+                                            driver.findElement(By.xpath("/html/body/form[1]/div[4]/div[2]/div/table[4]/tbody/tr/td/div/table[2]/tbody/tr[2]/td/table/tbody/tr["+l+"]/td[6]")).getText()+"\n"
+                            );
 
-                                        driver.findElement(By.xpath("/html/body/form[1]/div[4]/div[2]/div/table[4]/tbody/tr/td/div/table[2]/tbody/tr[2]/td/table/tbody/tr["+l+"]/td[6]")).getText()
-                        );
+                        }
 
                     }
 
@@ -70,21 +91,28 @@ public class beelineStatus {
 
             }
             catch (Exception e){
-                System.out.println(s+" : No Record Found");
+                System.out.println(SL+"\n"+s+"\n"+"No Record Found");
 
             }
-            for(int j=0;j<backCounnt;j++){
-                driver.navigate().back();
-            }
+            navigateBack(backCounnt,driver);
+
+
 
 
         }
     }
+
+    private static void navigateBack(int backCounnt, WebDriver driver) {
+        for(int j=0;j<backCounnt;j++){
+            driver.navigate().back();
+        }
+    }
+
     public static void main(String[] args) throws InterruptedException {
         String[] reqID={
-                "111329",
-                "111331",
-                "111332",
+                "110275",
+                "110148",
+                "110239",
                 "107852",
                 "108262",
                 "109689",
@@ -92,11 +120,10 @@ public class beelineStatus {
                 "109018",
                 "111124",
                 "111126",
-                "111325",
-                "111327",
                 "108703",
                 "110929",
-                "110930"
+                "110930",
+                "111410"
 
         };
         //System.setProperty("web.driver.chrome","C:\\Users\\Rmnai\\OneDrive\\Desktop\\Selenium\\Selenium\\src\\main\\resources\\chromedriver.exe");
